@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question id="1" difficulty="easy">
+    <snippet><![CDATA[def greet(name):
+    print(f"Hello, {name}!")
+    return True
+
+greet("World")]]></snippet>
+    <correct>Python</correct>
+    <options>
+      <option>Python</option>
+      <option>Ruby</option>
+      <option>Kotlin</option>
+      <option>Swift</option>
+    </options>
+    <hint>f-строки и отступы вместо скобок</hint>
+  </question>
+
+  <question id="2" difficulty="easy">
+    <snippet><![CDATA[const greet = (name) => {
+  console.log(`Hello, ${name}!`);
+  return true;
+};
+
+greet("World");]]></snippet>
+    <correct>JavaScript</correct>
+    <options>
+      <option>TypeScript</option>
+      <option>JavaScript</option>
+      <option>Dart</option>
+      <option>Scala</option>
+    </options>
+    <hint>Стрелочные функции и template literals</hint>
+  </question>
+
+  <question id="3" difficulty="medium">
+    <snippet><![CDATA[fn main() {
+    let mut v: Vec<i32> = Vec::new();
+    v.push(1);
+    v.push(2);
+    println!("{:?}", v);
+}]]></snippet>
+    <correct>Rust</correct>
+    <options>
+      <option>Go</option>
+      <option>C++</option>
+      <option>Rust</option>
+      <option>Swift</option>
+    </options>
+    <hint>Ownership и макрос println!</hint>
+  </question>
+
+  <question id="4" difficulty="easy">
+    <snippet><![CDATA[package main
+
+import "fmt"
+
+func main() {
+    nums := []int{1, 2, 3}
+    for _, v := range nums {
+        fmt.Println(v)
+    }
+}]]></snippet>
+    <correct>Go</correct>
+    <options>
+      <option>Rust</option>
+      <option>Go</option>
+      <option>Java</option>
+      <option>Kotlin</option>
+    </options>
+    <hint>package main и fmt.Println</hint>
+  </question>
+
+  <question id="5" difficulty="medium">
+    <snippet><![CDATA[public class Main {
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3};
+        for (int x : arr) {
+            System.out.println(x);
+        }
+    }
+}]]></snippet>
+    <correct>Java</correct>
+    <options>
+      <option>C#</option>
+      <option>Java</option>
+      <option>Kotlin</option>
+      <option>Scala</option>
+    </options>
+    <hint>public class и System.out.println</hint>
+  </question>
+
+  <question id="6" difficulty="medium">
+    <snippet><![CDATA[using System;
+
+class Program {
+    static void Main() {
+        var nums = new int[] {1, 2, 3};
+        foreach (var n in nums) {
+            Console.WriteLine(n);
+        }
+    }
+}]]></snippet>
+    <correct>C#</correct>
+    <options>
+      <option>Java</option>
+      <option>C++</option>
+      <option>C#</option>
+      <option>Kotlin</option>
+    </options>
+    <hint>using System и Console.WriteLine</hint>
+  </question>
+
+  <question id="7" difficulty="hard">
+    <snippet><![CDATA[#include <iostream>
+#include <vector>
+
+int main() {
+    std::vector<int> v = {1, 2, 3};
+    for (auto& x : v) {
+        std::cout << x << "\n";
+    }
+    return 0;
+}]]></snippet>
+    <correct>C++</correct>
+    <options>
+      <option>C</option>
+      <option>Rust</option>
+      <option>C++</option>
+      <option>Java</option>
+    </options>
+    <hint>#include и std::vector</hint>
+  </question>
+
+  <question id="8" difficulty="medium">
+    <snippet><![CDATA[fun main() {
+    val nums = listOf(1, 2, 3)
+    nums.forEach { println(it) }
+    val doubled = nums.map { it * 2 }
+    println(doubled)
+}]]></snippet>
+    <correct>Kotlin</correct>
+    <options>
+      <option>Swift</option>
+      <option>Kotlin</option>
+      <option>Scala</option>
+      <option>Dart</option>
+    </options>
+    <hint>val, listOf и лямбды с it</hint>
+  </question>
+
+  <question id="9" difficulty="medium">
+    <snippet><![CDATA[let nums = [1, 2, 3]
+let doubled = nums.map { $0 * 2 }
+print(doubled)
+
+func greet(_ name: String) -> String {
+    return "Hello, \(name)!"
+}]]></snippet>
+    <correct>Swift</correct>
+    <options>
+      <option>Kotlin</option>
+      <option>Ruby</option>
+      <option>Swift</option>
+      <option>Dart</option>
+    </options>
+    <hint>$0 в замыканиях и string interpolation с \()</hint>
+  </question>
+
+  <question id="10" difficulty="easy">
+    <snippet><![CDATA[nums = [1, 2, 3]
+doubled = nums.map { |x| x * 2 }
+puts doubled
+
+def greet(name)
+  "Hello, #{name}!"
+end]]></snippet>
+    <correct>Ruby</correct>
+    <options>
+      <option>Python</option>
+      <option>Ruby</option>
+      <option>Elixir</option>
+      <option>Perl</option>
+    </options>
+    <hint>puts, блоки с |x| и #{} interpolation</hint>
+  </question>
+
+  <question id="11" difficulty="hard">
+    <snippet><![CDATA[defmodule Greeter do
+  def greet(name) do
+    IO.puts("Hello, #{name}!")
+  end
+end
+
+Enum.each([1, 2, 3], fn x ->
+  IO.inspect(x * 2)
+end)]]></snippet>
+    <correct>Elixir</correct>
+    <options>
+      <option>Erlang</option>
+      <option>Elixir</option>
+      <option>Haskell</option>
+      <option>Clojure</option>
+    </options>
+    <hint>defmodule, do/end блоки и IO.puts</hint>
+  </question>
+
+  <question id="12" difficulty="hard">
+    <snippet><![CDATA[main :: IO ()
+main = do
+  let nums = [1, 2, 3]
+  let doubled = map (*2) nums
+  print doubled
+  putStrLn "Hello, World!"]]></snippet>
+    <correct>Haskell</correct>
+    <options>
+      <option>Elixir</option>
+      <option>OCaml</option>
+      <option>Haskell</option>
+      <option>F#</option>
+    </options>
+    <hint>Типовые аннотации IO () и do-notation</hint>
+  </question>
+
+  <question id="13" difficulty="medium">
+    <snippet><![CDATA[interface Animal {
+  name: string;
+  speak(): string;
+}
+
+const dog: Animal = {
+  name: "Rex",
+  speak: () => "Woof!"
+};
+
+console.log(dog.speak());]]></snippet>
+    <correct>TypeScript</correct>
+    <options>
+      <option>JavaScript</option>
+      <option>TypeScript</option>
+      <option>Dart</option>
+      <option>Go</option>
+    </options>
+    <hint>interface с типами и : string аннотации</hint>
+  </question>
+
+  <question id="14" difficulty="medium">
+    <snippet><![CDATA[void main() {
+  var nums = [1, 2, 3];
+  var doubled = nums.map((x) => x * 2).toList();
+  print(doubled);
+  
+  String greet(String name) => "Hello, $name!";
+  print(greet("World"));
+}]]></snippet>
+    <correct>Dart</correct>
+    <options>
+      <option>Kotlin</option>
+      <option>Swift</option>
+      <option>Dart</option>
+      <option>TypeScript</option>
+    </options>
+    <hint>void main() и $name interpolation без фигурных скобок</hint>
+  </question>
+
+  <question id="15" difficulty="hard">
+    <snippet><![CDATA[object Main extends App {
+  val nums = List(1, 2, 3)
+  val doubled = nums.map(_ * 2)
+  println(doubled)
+  
+  def greet(name: String): String = s"Hello, $name!"
+  println(greet("World"))
+}]]></snippet>
+    <correct>Scala</correct>
+    <options>
+      <option>Kotlin</option>
+      <option>Haskell</option>
+      <option>Scala</option>
+      <option>F#</option>
+    </options>
+    <hint>object Main extends App и _ как placeholder</hint>
+  </question>
+</quiz>

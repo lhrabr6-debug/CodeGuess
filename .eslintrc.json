@@ -1,0 +1,23 @@
+{
+  "env": {
+    "browser": true,
+    "es2022": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2022,
+    "sourceType": "script"
+  },
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-undef": "error",
+    "semi": ["error", "always"],
+    "quotes": ["warn", "single"],
+    "eqeqeq": ["error", "always"],
+    "no-var": "error",
+    "prefer-const": "warn",
+    "no-console": "off",
+    "curly": "error",
+    "indent": ["warn", 2],
+    "no-trailing-spaces": "warn"
+  }
+}
